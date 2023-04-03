@@ -1,6 +1,7 @@
 import { Chess } from "chess.js";
 import React, { useEffect } from "react";
 import { Chessboard } from "react-chessboard";
+import "../styles/root.css";
 
 interface Move {
 	from: string;
@@ -39,11 +40,24 @@ const Game = (props: Props) => {
 	}
 
 	return (
-		<Chessboard
-			position={game.fen()}
-			onPieceDrop={onDrop}
-			boardWidth={500}
-		/>
+		<div className="container">
+			<div>
+				<Chessboard
+					position={game.fen()}
+					onPieceDrop={onDrop}
+					boardWidth={500}
+					customBoardStyle={{
+						borderRadius: "15px",
+					}}
+					customDarkSquareStyle={{
+						backgroundColor: "rgb(83, 104, 131)",
+					}}
+					customLightSquareStyle={{
+						backgroundColor: "rgb(251, 214, 135)",
+					}}
+				/>
+			</div>
+		</div>
 	);
 };
 

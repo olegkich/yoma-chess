@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+
+.home {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	overflow-y: hidden;
+	user-select: none;
+}
+
+.home__header {
+	font-family: "Koulen";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 80px;
+
+	line-height: 60px;
+	text-align: center;
+
+	color: #e1b144;
+}
+
+.home__main {
+	z-index: 10;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	right: 250px;
+	width: 25rem;
+}
+
+.button-blank {
+	background: none;
+	border: 3px solid var(--secondary);
+}
+
+.button-primary {
+	background: var(--primary);
+	color: black;
+}
+
+.button-secondary {
+	background: var(--secondary);
+}
+
+.button-blank:hover {
+	background: var(--secondary-highlight-blank);
+	transition: 0.3s;
+}
+
+.button-primary:hover {
+	background: var(--primary-highlight);
+	transition: 0.3s;
+}
+
+.button-secondary:hover {
+	background: var(--secondary-highlight);
+	transition: 0.3s;
+}
+
+.home__showcase {
+	position: relative;
+	top: 15px;
+	right: 50px;
+	width: 800px;
+	height: auto;
+}

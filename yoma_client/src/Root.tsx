@@ -1,10 +1,11 @@
 import React from "react";
-import Auth from "./Auth";
+import Home from "./components/Home";
+import "./styles/root.css";
 
 type Props = {};
 
 const Root = (props: Props) => {
-	return <Auth />;
+	return <Home />;
 };
 
 export default Root;

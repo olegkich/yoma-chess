@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Game from "./Game";
+import Game from "./components/Game";
 import Root from "./Root";
+import "./index.css";
 
 const router = createBrowserRouter([
 	{
@@ -18,6 +19,8 @@ const root = ReactDOM.createRoot(
 
 root.render(
 	<React.StrictMode>
-		<RouterProvider router={router} />
+		<div className="container">
+			<RouterProvider router={router} />
+		</div>
 	</React.StrictMode>
 );
